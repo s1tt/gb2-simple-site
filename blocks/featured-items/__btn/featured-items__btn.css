@@ -1,0 +1,10 @@
+.featured-items__btn {
+  background-color: transparent;
+  border: 1px solid #ff6a6a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  padding: 14px 38.5px;
+  cursor: pointer;
+}

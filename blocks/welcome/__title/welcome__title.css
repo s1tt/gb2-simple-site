@@ -1,0 +1,19 @@
+.welcome__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+  width: 372px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.welcome__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 100%;
+  background-color: #f16d7f;
+}

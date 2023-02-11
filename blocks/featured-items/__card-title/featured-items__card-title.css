@@ -1,0 +1,8 @@
+.featured-items__card-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 25px 0 16px 16px;
+}

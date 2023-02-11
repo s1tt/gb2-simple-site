@@ -1,0 +1,6 @@
+.featured-items__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+  margin-bottom: 49px;
+}

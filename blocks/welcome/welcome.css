@@ -1,0 +1,6 @@
+.welcome {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #f1e4e6;
+}

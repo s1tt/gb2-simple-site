@@ -1,0 +1,5 @@
+.header__left-side {
+  display: flex;
+  gap: 41px;
+  align-items: baseline;
+}

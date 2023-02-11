@@ -1,0 +1,8 @@
+.offers {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: 260px 180px;
+  margin-top: 65px;
+  margin-bottom: 96px;
+}

@@ -1,0 +1,38 @@
+@import url('../vendor/normalize.css');
+@import url('../blocks/center/center.css');
+
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__btn/header__btn.css');
+@import url('../blocks/header/__left-side-logo/header__left-side-logo.css');
+@import url('../blocks/header/__left-side-search-btn/header__left-side-search-btn.css');
+@import url('../blocks/header/__left-side/header__left-side.css');
+@import url('../blocks/header/__right-side-burger-btn/header__right-side-burger-btn.css');
+@import url('../blocks/header/__right-side-cart-btn/header__right-side-cart-btn.css');
+@import url('../blocks/header/__right-side-profile-btn/header__right-side-profile-btn.css');
+@import url('../blocks/header/__right-side/header__right-side.css');
+
+@import url('../blocks/welcome/welcome.css');
+@import url('../blocks/welcome/__img/welcome__img.css');
+@import url('../blocks/welcome/__title/welcome__title.css');
+@import url('../blocks/welcome/__title/_color/welcome__title_color_pink.css');
+@import url('../blocks/welcome/__title/_size/welcome__title_size_s.css');
+
+@import url('../blocks/offers/offers.css');
+@import url('../blocks/offers/__card-subtitle/offers__card-subtitle.css');
+@import url('../blocks/offers/__card-title/offers__card-title.css');
+@import url('../blocks/offers/__card/offers__card.css');
+@import url('../blocks/offers/__card/_num/offers__card_num_one.css');
+@import url('../blocks/offers/__card/_num/offers__card_num_two.css');
+@import url('../blocks/offers/__card/_num/offers__card_num_three.css');
+@import url('../blocks/offers/__card/_num/offers__card_num_four.css');
+
+@import url('../blocks/featured-items/featured-items.css');
+@import url('../blocks/featured-items/__title/featured-items__title.css');
+@import url('../blocks/featured-items/__subtitle/featured-items__subtitle.css');
+@import url('../blocks/featured-items/__cards/featured-items__cards.css');
+@import url('../blocks/featured-items/__card/featured-items__card.css');
+@import url('../blocks/featured-items/__card-img/featured-items__card-img.css');
+@import url('../blocks/featured-items/__card-price/featured-items__card-price.css');
+@import url('../blocks/featured-items/__card-subtitle/featured-items__card-subtitle.css');
+@import url('../blocks/featured-items/__card-title/featured-items__card-title.css');
+@import url('../blocks/featured-items/__btn/featured-items__btn.css');

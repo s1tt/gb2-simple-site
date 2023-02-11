@@ -1,0 +1,6 @@
+.featured-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}

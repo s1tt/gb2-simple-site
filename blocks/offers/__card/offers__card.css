@@ -1,7 +1,29 @@
 .offers__card {
-  background-color: rgba(33, 22, 22, 0.7);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: scale 0.3s;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.offers__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(33, 22, 22, 0.7);
+  transition: background-color 0.3s linear;
+}
+
+.offers__card:hover {
+  scale: 1.05;
+}
+
+.offers__card:hover::before {
+  background-color: rgba(33, 22, 22, 0.85);
 }

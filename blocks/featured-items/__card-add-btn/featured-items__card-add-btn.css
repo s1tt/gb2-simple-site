@@ -1,0 +1,28 @@
+.featured-items__card-add-btn {
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 138px;
+  height: 43px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.featured-items__card-img-container:hover > .featured-items__card-add-btn {
+  opacity: 1;
+}

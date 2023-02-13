@@ -8,4 +8,9 @@
   width: 32px;
   height: 29px;
   cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.header__btn:hover {
+  opacity: 0.3;
 }

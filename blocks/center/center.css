@@ -1,4 +1,12 @@
 .center {
+  box-sizing: border-box;
   padding-left: calc(50% - 1140px / 2);
   padding-right: calc(50% - 1140px / 2);
+}
+
+@media screen and (max-width: 984px) {
+  .center {
+    padding-left: calc(50% - (768px - 32px) / 2);
+    padding-right: calc(50% - (768px - 32px) / 2);
+  }
 }

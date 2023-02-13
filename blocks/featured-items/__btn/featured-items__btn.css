@@ -7,4 +7,10 @@
   color: #f26376;
   padding: 14px 38.5px;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.featured-items__btn:hover {
+  color: #fff;
+  background-color: #ff6a6a;
 }

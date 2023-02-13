@@ -14,8 +14,8 @@
 @import url('../blocks/welcome/welcome.css');
 @import url('../blocks/welcome/__img/welcome__img.css');
 @import url('../blocks/welcome/__title/welcome__title.css');
-@import url('../blocks/welcome/__title/_color/welcome__title_color_pink.css');
 @import url('../blocks/welcome/__title/_size/welcome__title_size_s.css');
+@import url('../blocks/welcome/__title/_color/welcome__title_color_pink.css');
 
 @import url('../blocks/offers/offers.css');
 @import url('../blocks/offers/__card-subtitle/offers__card-subtitle.css');
@@ -36,3 +36,5 @@
 @import url('../blocks/featured-items/__card-subtitle/featured-items__card-subtitle.css');
 @import url('../blocks/featured-items/__card-title/featured-items__card-title.css');
 @import url('../blocks/featured-items/__btn/featured-items__btn.css');
+@import url('../blocks/featured-items/__card-img-container/featured-items__card-img-container.css');
+@import url('../blocks/featured-items/__card-add-btn/featured-items__card-add-btn.css');

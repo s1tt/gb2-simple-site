@@ -5,3 +5,9 @@
   background-color: #f1e4e6;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 767px) {
+  .welcome {
+    justify-content: center;
+  }
+}

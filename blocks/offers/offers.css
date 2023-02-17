@@ -1,4 +1,5 @@
 .offers {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
@@ -11,5 +12,13 @@
   .offers {
     gap: 20px;
     grid-template-rows: 167px 116px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .offers {
+    grid-template-columns: 343px;
+    grid-template-rows: repeat(3, 248px) 111px;
+    margin-bottom: 64px;
   }
 }

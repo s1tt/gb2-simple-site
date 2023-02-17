@@ -10,3 +10,10 @@
     padding-right: calc(50% - (768px - 32px) / 2);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - (375px - 32px) / 2);
+    padding-right: calc(50% - (375px - 32px) / 2);
+  }
+}

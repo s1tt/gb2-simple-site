@@ -1,3 +1,10 @@
 .header__right-side-cart-btn {
   background-image: url('../../../img/cart-ico.svg');
 }
+
+@media screen and (max-width: 767px) {
+  .header__right-side-cart-btn {
+    position: absolute;
+    visibility: hidden;
+  }
+}

@@ -6,3 +6,9 @@
   color: #9f9f9f;
   margin-bottom: 48px;
 }
+
+@media screen and (max-width: 767px) {
+  .featured-items__subtitle {
+    margin-bottom: 65px;
+  }
+}

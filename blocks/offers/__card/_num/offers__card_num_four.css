@@ -2,3 +2,9 @@
   background-image: url('../../../../img/offers__card4.jpg');
   grid-column: span 3;
 }
+
+@media screen and (max-width: 767px) {
+  .offers__card_num_four {
+    grid-column: span 1;
+  }
+}

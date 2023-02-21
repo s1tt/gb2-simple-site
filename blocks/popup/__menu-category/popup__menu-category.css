@@ -1,0 +1,11 @@
+.popup__menu-category {
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.popup__menu-category:last-child {
+  margin: 0;
+}

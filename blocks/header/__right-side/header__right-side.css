@@ -1,4 +1,5 @@
 .header__right-side {
+  position: relative;
   display: flex;
   gap: 33px;
 }

@@ -1,0 +1,13 @@
+.footer__social-item {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+}
+
+.footer__social-item:hover .footer__social-item-ico path {
+  fill: #fff;
+}
+
+.footer__social-item:hover {
+  background-color: #f16d7f;
+}

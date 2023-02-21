@@ -1,0 +1,31 @@
+.subscribe {
+  font-family: 'Lato';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-image: url('../../img/bg-subscribe.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 87px;
+  padding-bottom: 156px;
+}
+
+@media screen and (max-width: 984px) {
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 54px;
+    padding-bottom: 219px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe {
+    gap: 59px;
+    padding-bottom: 110px;
+  }
+}

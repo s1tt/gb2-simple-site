@@ -1,5 +1,5 @@
 .subscribe__right-form-input {
-  padding: 0;
+  padding: 0 0 0 17px;
   width: 256px;
   height: 52px;
   background-color: #e1e1e1;
@@ -8,7 +8,6 @@
 }
 
 .subscribe__right-form-input::placeholder {
-  padding-left: 17px;
   font-size: 14px;
   line-height: 17px;
   display: flex;

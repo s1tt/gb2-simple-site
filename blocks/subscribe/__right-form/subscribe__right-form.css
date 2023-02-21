@@ -1,6 +1,5 @@
 .subscribe__right-form {
   display: flex;
-  margin-left: 17px;
 }
 
 @media screen and (max-width: 767px) {

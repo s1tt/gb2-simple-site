@@ -18,18 +18,18 @@
     transition: scale 0.3s;
 
     &_num_one {
-      background-image: url('../../../../../img/offers__card1.jpg');
+      background-image: url('../img/offers__card1.jpg');
     }
     &_num_two {
-      background-image: url('../../../../../img/offers__card2.jpg');
+      background-image: url('../img/offers__card2.jpg');
     }
 
     &_num_three {
-      background-image: url('../../../../../img/offers__card3.jpg');
+      background-image: url('../img/offers__card3.jpg');
     }
 
     &_num_four {
-      background-image: url('../../../../../img/offers__card4.jpg');
+      background-image: url('../img/offers__card4.jpg');
       grid-column: span 3;
     }
   }

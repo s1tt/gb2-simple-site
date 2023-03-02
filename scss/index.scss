@@ -1,9 +1,9 @@
 // @use 'sass:math';
 // @import '../vendor/normalize.css';
 @import url('../vendor/normalize.css');
-@import './variables.scss';
+@import './variables';
 
-@import '../blocks/center/center.scss';
+@import '../blocks/center/center';
 @import '../blocks/content/content';
 @import '../blocks/header/header';
 @import '../blocks/featured-items/featured-items';

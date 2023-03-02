@@ -1,4 +1,4 @@
-@import url("../../vendor/normalize.css");
+@import url("../vendor/normalize.css");
 .center {
   box-sizing: border-box;
   padding-left: calc(50% - 570px);

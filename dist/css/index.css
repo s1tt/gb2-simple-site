@@ -55,7 +55,7 @@
   display: flex;
 }
 .header__left-side-search-btn {
-  background-image: url("../../../img/search-ico.svg");
+  background-image: url("../../../../img/search-ico.svg");
   background-size: 26px;
 }
 .header__right-side {
@@ -64,13 +64,13 @@
   gap: 33px;
 }
 .header__right-side-burger-btn {
-  background-image: url("../../../img/burger-ico.svg");
+  background-image: url("../../../../img/burger-ico.svg");
 }
 .header__right-side-cart-btn {
-  background-image: url("../../../img/cart-ico.svg");
+  background-image: url("../../../../img/cart-ico.svg");
 }
 .header__right-side-profile-btn {
-  background-image: url("../../../img/profile-ico.svg");
+  background-image: url("../../../../img/profile-ico.svg");
   background-size: 29px;
 }
 
@@ -223,7 +223,7 @@
 }
 
 .features {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: 1140px;
   font-weight: 400;
   display: flex;
   justify-content: space-around;
@@ -232,19 +232,8 @@
   padding-top: 104px;
   padding-bottom: 104px;
 }
-.features__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  max-width: 360px;
-}
 .features__item-ico {
   margin-bottom: 12px;
-}
-.features__item-ico path {
-  margin-bottom: 12px;
-  fill: #f16d7f;
 }
 .features__item-subtitle {
   margin: 0;
@@ -259,6 +248,13 @@
   font-size: 19.96px;
   line-height: 24px;
   color: #fbfbfb;
+}
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 360px;
 }
 
 @media screen and (max-width: 984px) {
@@ -348,16 +344,16 @@
   transition: scale 0.3s;
 }
 .offers__card_num_one {
-  background-image: url("../../../../img/offers__card1.jpg");
+  background-image: url("../../../../../img/offers__card1.jpg");
 }
 .offers__card_num_two {
-  background-image: url("../../../../img/offers__card2.jpg");
+  background-image: url("../../../../../img/offers__card2.jpg");
 }
 .offers__card_num_three {
-  background-image: url("../../../../img/offers__card3.jpg");
+  background-image: url("../../../../../img/offers__card3.jpg");
 }
 .offers__card_num_four {
-  background-image: url("../../../../img/offers__card4.jpg");
+  background-image: url("../../../../../img/offers__card4.jpg");
   grid-column: span 3;
 }
 .offers__card::before {

@@ -1,0 +1,55 @@
+.features {
+  font-family: $widthForPC;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: $darkColor;
+  padding-top: 104px;
+  padding-bottom: 104px;
+
+  &__item-ico {
+    margin-bottom: 12px;
+  }
+
+  &__item-subtitle {
+    margin: 0;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: $lightColor;
+  }
+
+  &__item-title {
+    margin: 0;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: $lightColor;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    gap: 46px;
+    padding-bottom: 81px;
+  }
+}

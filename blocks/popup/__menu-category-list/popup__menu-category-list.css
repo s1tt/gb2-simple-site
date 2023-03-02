@@ -1,8 +1,0 @@
-.popup__menu-category-list {
-  list-style-type: none;
-  margin-top: 12px;
-  padding-left: 21.5px;
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}

@@ -1,0 +1,99 @@
+.offers {
+  font-family: $mainFont;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px 180px;
+  margin-top: 65px;
+  margin-bottom: 96px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: scale 0.3s;
+
+    &_num_one {
+      background-image: url('../../../../img/offers__card1.jpg');
+    }
+    &_num_two {
+      background-image: url('../../../../img/offers__card2.jpg');
+    }
+
+    &_num_three {
+      background-image: url('../../../../img/offers__card3.jpg');
+    }
+
+    &_num_four {
+      background-image: url('../../../../img/offers__card4.jpg');
+      grid-column: span 3;
+    }
+  }
+
+  &__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 22, 22, 0.7);
+    transition: background-color 0.3s linear;
+  }
+
+  &__card:hover {
+    scale: 1.05;
+  }
+
+  &__card:hover::before {
+    background-color: rgba(33, 22, 22, 0.85);
+  }
+
+  &__card-title {
+    margin: 0;
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $mainColor;
+    margin-top: 5px;
+  }
+
+  &__card-subtitle {
+    margin: 0;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $lightColor;
+
+    &_num_four {
+      margin-top: 65px;
+    }
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .offers {
+    gap: 20px;
+    grid-template-rows: 167px 116px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .offers {
+    grid-template-columns: 343px;
+    grid-template-rows: repeat(3, 248px) 111px;
+    margin-bottom: 64px;
+
+    &__card_num_four {
+      grid-column: span 1;
+    }
+  }
+}

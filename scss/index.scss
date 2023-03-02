@@ -1,0 +1,18 @@
+// @use 'sass:math';
+// @import '../vendor/normalize.css';
+@import url('../../vendor/normalize.css');
+@import './variables.scss';
+
+@import '../blocks/center/center.scss';
+@import '../blocks/content/content';
+@import '../blocks/header/header';
+@import '../blocks/featured-items/featured-items';
+@import '../blocks/features/features';
+@import '../blocks/footer/footer';
+@import '../blocks/offers/offers';
+@import '../blocks/popup/popup';
+@import '../blocks/subscribe/subscribe';
+@import '../blocks/welcome/welcome';
+@import '../blocks/breadcrumbs/breadcrumbs';
+@import '../blocks/slider/slider';
+@import '../blocks/productDescription/productDescription';

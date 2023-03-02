@@ -1,0 +1,147 @@
+.productDescription {
+  font-family: $mainFont;
+
+  &__wrapper {
+    position: relative;
+    bottom: 50px;
+    background-color: #ffffff;
+    border: 1px solid $colorForInputs;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
+  }
+
+  &__collection-title-wrapper {
+    position: relative;
+  }
+
+  &__collection-title {
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $mainColor;
+    padding-bottom: 12px;
+  }
+
+  &__collection-title:before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    border-bottom: 3px solid $mainColor;
+  }
+
+  &__item-title {
+    margin: 12px 0 0;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $darkColor;
+  }
+
+  &__item-description {
+    margin: 48px 0 0;
+    max-width: 555px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $grayColor;
+  }
+
+  &__item-price {
+    margin: 32px 0 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $mainColor;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sort {
+    padding-top: 65px;
+    margin-top: 65px;
+    margin-bottom: 49px;
+    border-top: 1px solid $colorForInputs;
+  }
+
+  &__sort-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+    gap: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__sort-item-link {
+    text-decoration: none;
+    color: $grayColor;
+    position: relative;
+  }
+
+  &__sort-item-link::after {
+    content: '';
+    background-image: url('../../img/arrow-sort.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    top: 5px;
+    margin-left: 9px;
+  }
+
+  &__btn {
+    padding: 0;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid $mainColor;
+    height: 43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $mainColor;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+  }
+
+  &__btn:hover {
+    color: $lightColor;
+    background-color: $mainColor;
+  }
+
+  &__btn:hover > &__btn-ico path {
+    fill: $lightColor;
+  }
+
+  &__btn-ico {
+    padding-left: 24px;
+  }
+
+  &__btn-text {
+    padding-right: 56px;
+  }
+}

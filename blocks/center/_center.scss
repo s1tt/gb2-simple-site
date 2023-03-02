@@ -1,0 +1,19 @@
+.center {
+  box-sizing: border-box;
+  padding-left: calc(50% - $widthForPC / 2);
+  padding-right: calc(50% - $widthForPC / 2);
+}
+
+@media screen and (max-width: $widthForTablet) {
+  .center {
+    padding-left: calc(50% - ($brakePointforTablet - 32px) / 2);
+    padding-right: calc(50% - ($brakePointforTablet - 32px) / 2);
+  }
+}
+
+@media screen and (max-width: $widthForMobile) {
+  .center {
+    padding-left: calc(50% - ($brakePointforMobile - 32px) / 2);
+    padding-right: calc(50% - ($brakePointforMobile - 32px) / 2);
+  }
+}

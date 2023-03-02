@@ -1,0 +1,125 @@
+.subscribe {
+  font-family: $mainFont;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-image: url('../../img/bg-subscribe.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 87px;
+  padding-bottom: 156px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+    gap: 30px;
+  }
+
+  &__left-photo {
+    width: 96px;
+  }
+
+  &__left-text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $darkColor;
+  }
+
+  &__left-text_style_italic {
+    font-style: italic;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 557px;
+  }
+
+  &__right-form {
+    display: flex;
+  }
+
+  &__right-form-button {
+    border: none;
+    background-color: $mainColor;
+    padding: 15px 18px;
+    border-radius: 0px 18px 18px 0px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $lightColor;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &__right-form-button:hover {
+    color: $mainColor;
+    background-color: $lightColor;
+  }
+
+  &__right-form-input {
+    padding: 0 17px;
+    width: 256px;
+    height: 52px;
+    background-color: $colorForInputs;
+    border: none;
+    border-radius: 18px 0 0 18px;
+  }
+
+  &__right-form-input::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: $darkColor;
+    opacity: 0.67;
+  }
+
+  &__right-subtitle {
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: $darkColor;
+  }
+
+  &__right-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: $darkColor;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 54px;
+    padding-bottom: 219px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe {
+    gap: 59px;
+    padding-bottom: 110px;
+
+    &__right-form {
+      width: 341px;
+    }
+  }
+}

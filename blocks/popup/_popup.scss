@@ -1,0 +1,65 @@
+.popup {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+
+  &__menu {
+    top: 50px;
+    right: 0px;
+    padding: 32px;
+    background-color: $lightColor;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s linear;
+    z-index: 1;
+  }
+
+  &__menu_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__menu-category {
+    font-size: 14px;
+    line-height: 17px;
+    color: $mainColor;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__menu-category:last-child {
+    margin: 0;
+  }
+
+  &__menu-category-item-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grayColor;
+  }
+
+  &__menu-category-list {
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 21.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  &__menu-list {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__menu-title {
+    text-transform: uppercase;
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkColor;
+  }
+}

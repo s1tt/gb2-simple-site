@@ -1,9 +1,0 @@
-.subscribe__right-form {
-  display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  .subscribe__right-form {
-    width: 341px;
-  }
-}

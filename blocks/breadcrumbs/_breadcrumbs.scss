@@ -1,0 +1,35 @@
+.breadcrumbs {
+  font-family: $mainFont;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $colorForSectionBackgroundAlpha;
+
+  &__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $mainColor;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 0.2em;
+  }
+
+  &__item-link {
+    text-decoration: none;
+    color: $grayColor;
+
+    &_active {
+      color: $mainColor;
+    }
+  }
+}

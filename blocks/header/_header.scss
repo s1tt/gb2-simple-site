@@ -1,0 +1,74 @@
+.header {
+  font-family: $mainFont;
+  background-color: $darkColor;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__btn {
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border: none;
+    width: 32px;
+    height: 29px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+
+  &__btn:hover {
+    opacity: 0.3;
+  }
+
+  &__left-side {
+    display: flex;
+    align-items: baseline;
+    gap: 41px;
+  }
+
+  &__left-side-logo-link {
+    display: flex;
+  }
+
+  &__left-side-search-btn {
+    background-image: url('../../../img/search-ico.svg');
+    background-size: 26px;
+  }
+
+  &__right-side {
+    display: flex;
+    position: relative;
+    gap: 33px;
+  }
+
+  &__right-side-burger-btn {
+    background-image: url('../../../img/burger-ico.svg');
+  }
+
+  &__right-side-cart-btn {
+    background-image: url('../../../img/cart-ico.svg');
+  }
+
+  &__right-side-profile-btn {
+    background-image: url('../../../img/profile-ico.svg');
+    background-size: 29px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__right-side-profile-btn,
+    &__right-side-cart-btn {
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+}

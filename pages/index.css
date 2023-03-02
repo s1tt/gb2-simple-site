@@ -667,6 +667,9 @@
   padding-bottom: 60px;
   background-color: #f8f3f4;
 }
+.breadcrumbs__item {
+  white-space: nowrap;
+}
 .breadcrumbs__title {
   margin: 0;
   font-style: normal;

@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: $brakePointforTablet) {
   .features {
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $brakePointforMobile) {
   .features {
     gap: 46px;
     padding-bottom: 81px;

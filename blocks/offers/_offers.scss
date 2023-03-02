@@ -79,14 +79,14 @@
   }
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: $brakePointforTablet) {
   .offers {
     gap: 20px;
     grid-template-rows: 167px 116px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $brakePointforMobile) {
   .offers {
     grid-template-columns: 343px;
     grid-template-rows: repeat(3, 248px) 111px;

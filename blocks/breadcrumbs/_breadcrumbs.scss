@@ -7,6 +7,10 @@
   padding-bottom: 60px;
   background-color: $colorForSectionBackgroundAlpha;
 
+  &__item {
+    white-space: nowrap;
+  }
+
   &__title {
     margin: 0;
     font-style: normal;

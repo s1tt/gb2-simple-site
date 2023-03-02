@@ -4,16 +4,16 @@
   padding-right: calc(50% - $widthForPC / 2);
 }
 
-@media screen and (max-width: $widthForTablet) {
+@media screen and (max-width: $brakePointforTablet) {
   .center {
-    padding-left: calc(50% - ($brakePointforTablet - 32px) / 2);
-    padding-right: calc(50% - ($brakePointforTablet - 32px) / 2);
+    padding-left: calc(50% - ($widthForTablet - 32px) / 2);
+    padding-right: calc(50% - ($widthForTablet - 32px) / 2);
   }
 }
 
-@media screen and (max-width: $widthForMobile) {
+@media screen and (max-width: $brakePointforMobile) {
   .center {
-    padding-left: calc(50% - ($brakePointforMobile - 32px) / 2);
-    padding-right: calc(50% - ($brakePointforMobile - 32px) / 2);
+    padding-left: calc(50% - ($widthForMobile - 32px) / 2);
+    padding-right: calc(50% - ($widthForMobile - 32px) / 2);
   }
 }

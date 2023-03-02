@@ -37,7 +37,7 @@
     line-height: 38px;
   }
 
-  @media screen and (max-width: 984px) {
+  @media screen and (max-width: $brakePointforTablet) {
     .welcome {
       &__img {
         height: 368px;
@@ -56,7 +56,7 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $brakePointforMobile) {
     .welcome {
       justify-content: center;
 

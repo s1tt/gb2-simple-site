@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: $brakePointforTablet) {
   .subscribe {
     flex-direction: column;
     align-items: center;
@@ -113,7 +113,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $brakePointforMobile) {
   .subscribe {
     gap: 59px;
     padding-bottom: 110px;

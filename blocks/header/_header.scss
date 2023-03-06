@@ -42,12 +42,25 @@
 
   &__right-side {
     display: flex;
-    position: relative;
     gap: 33px;
+    position: relative;
   }
 
   &__right-side-burger-btn {
     background-image: url('../img/burger-ico.svg');
+    pointer-events: none;
+  }
+
+  &__right-side-burger-checkbox {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+  }
+
+  &__right-side-burger-checkbox:checked ~ .popup__menu {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
   }
 
   &__right-side-cart-btn {

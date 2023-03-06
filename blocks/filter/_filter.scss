@@ -1,0 +1,195 @@
+.filter {
+  display: flex;
+  margin-top: 51px;
+  margin-bottom: 65px;
+  font-family: $mainFont;
+  //   position: relative;
+  //   z-index: 1;
+
+  &__filter {
+    position: absolute;
+    width: 360px;
+    z-index: 1;
+
+    &[open] {
+      background: #ffffff;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] &-summary-text {
+      color: $mainColor;
+    }
+
+    &[open] path {
+      fill: $mainColor;
+    }
+  }
+
+  &__filter-wrapper {
+    position: relative;
+    width: 360px;
+    height: auto;
+  }
+
+  &__filter-summary {
+    text-transform: uppercase;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    padding: 15px 0 0 16px;
+    cursor: pointer;
+    max-width: 70px;
+  }
+  &__filter-summary-text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__filter-category {
+    list-style-type: none;
+    margin: 46px 17px 16px 17px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__filter-item-sum {
+    text-transform: uppercase;
+    list-style: none;
+    padding: 11px 0 11px 11px;
+    border-bottom: 1px solid $mainColor;
+    border-left: 5px solid $mainColor;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: grayColor;
+    cursor: pointer;
+  }
+  &__filter-item-sum:hover {
+    border-color: $darkColor;
+  }
+
+  &__filter-category-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin: 24px 0 6px 17px;
+  }
+
+  &__filter-category-item-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grayColor;
+  }
+  &__filter-category-item-link:hover {
+    color: $mainColor;
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    gap: 48px;
+  }
+
+  &__sort-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grayColor;
+    text-transform: uppercase;
+    // width: 158px;
+    // height: 100px;
+    position: relative;
+  }
+
+  &__sort-item:hover {
+    color: $mainColor;
+  }
+
+  &__sort-trending-det {
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    // box-sizing: border-box;
+  }
+
+  &__sort-size-det {
+    width: 79px;
+    position: relative;
+    z-index: 1;
+    // box-sizing: border-box;
+  }
+
+  &__sort-price-det {
+    position: relative;
+    z-index: 1;
+    // box-sizing: border-box;
+  }
+
+  &__sort-size-det[open],
+  &__sort-trending-det[open],
+  &__sort-price-det[open] {
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  }
+
+  &__sort-size-det[open] &__sort-size-sum,
+  &__sort-trending-det[open] &__sort-trending-sum,
+  &__sort-price-det[open] &__sort-price-sum {
+    color: $mainColor;
+  }
+
+  &__sort-size-sum,
+  &__sort-trending-sum,
+  &__sort-price-sum {
+    list-style: none;
+    padding: 15px 0 15px 15px;
+    cursor: pointer;
+    // min-width: 100%;
+  }
+  &__sort-size-sum::after,
+  &__sort-trending-sum::after,
+  &__sort-price-sum::after {
+    content: '\02C5';
+    padding-left: 10px;
+  }
+
+  &__sort-size-list {
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+    padding: 10px 0 13px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__sort-size-checkbox {
+    margin-right: 10px;
+  }
+
+  &__sort-size-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grayColor;
+  }
+}

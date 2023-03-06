@@ -1,6 +1,7 @@
 @import url('../vendor/normalize.css');
 @import './variables';
 
+@import '../blocks/page/page';
 @import '../blocks/center/center';
 @import '../blocks/content/content';
 @import '../blocks/header/header';
@@ -14,3 +15,4 @@
 @import '../blocks/breadcrumbs/breadcrumbs';
 @import '../blocks/slider/slider';
 @import '../blocks/productDescription/productDescription';
+@import '../blocks/filter/filter';

@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   background-color: $colorForSectionBackgroundAlpha;
+  overflow: hidden;
 
   &__title {
     margin: 0;

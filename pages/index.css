@@ -1188,6 +1188,7 @@
   color: #5d5d5d;
   background-color: transparent;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .cart__order-form-btn:hover {
   background-color: #f16d7f;

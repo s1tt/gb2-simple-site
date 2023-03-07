@@ -20,9 +20,6 @@
         <div class="header__right-side">
           <input class="header__right-side-burger-checkbox" type="checkbox" name="burger-checkbox" id="burger-checkbox" />
           <label class="header__btn header__right-side-burger-label" for="burger-checkbox"><button class="header__btn header__right-side-burger-btn"></button></label>
-
-          <button class="header__btn header__right-side-profile-btn"></button>
-          <button class="header__btn header__right-side-cart-btn"></button>
           <nav class="popup popup__menu">
             <h2 class="popup__menu-title">Menu</h2>
             <ul class="popup__menu-list">
@@ -58,6 +55,8 @@
               </li>
             </ul>
           </nav>
+          <button class="header__btn header__right-side-profile-btn"></button>
+          <button class="header__btn header__right-side-cart-btn" onClick="location.href='./pages/cart.html'" type="button"></button>
         </div>
       </header>
       <main class="content">
@@ -180,14 +179,14 @@
         </section>
         <section class="subscribe center">
           <div class="subscribe__left">
-            <img src="./img/Intersect.png" alt="Photo" class="subscribe__left-photo" />
+            <img src="./../img/Intersect.png" alt="Photo" class="subscribe__left-photo" />
             <p class="subscribe__left-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="subscribe__left-text_style_italic">a pulvinar purus condimentum“</span></p>
           </div>
           <div class="subscribe__right">
             <h2 class="subscribe__right-title">subscribe</h2>
             <p class="subscribe__right-subtitle">FOR Our NEWLETTER AND PROMOTION</p>
-            <form action="#" class="subscribe__right-form" novalidate>
-              <input class="subscribe__right-form-input" type="text" name="subscribe__right-text" id="subscribe__right-text" placeholder="Enter Your Email" />
+            <form action="#" class="subscribe__right-form">
+              <input class="subscribe__right-form-input" type="email" name="subscribe__right-text" id="subscribe__right-text" placeholder="Enter Your Email" />
               <button class="subscribe__right-form-button" type="submit">Subscribe</button>
             </form>
           </div>

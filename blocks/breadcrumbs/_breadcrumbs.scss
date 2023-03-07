@@ -11,6 +11,17 @@
     white-space: nowrap;
   }
 
+  &__item:not(:last-child):after {
+    content: '/';
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  &__item:last-of-type &__item-link {
+    color: $mainColor;
+    font-weight: bold;
+  }
+
   &__title {
     margin: 0;
     font-style: normal;
@@ -31,9 +42,9 @@
   &__item-link {
     text-decoration: none;
     color: $grayColor;
+  }
 
-    &_active {
-      color: $mainColor;
-    }
+  &__item-link:hover {
+    color: $mainColor;
   }
 }

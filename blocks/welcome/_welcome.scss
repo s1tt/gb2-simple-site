@@ -16,6 +16,20 @@
     color: $darkColor;
     width: 372px;
     padding-left: 28px;
+
+    &_color {
+      &_pink {
+        color: $mainColor;
+      }
+    }
+
+    &_size {
+      &_s {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
   }
 
   &__title::before {
@@ -28,16 +42,6 @@
     background-color: $mainColor;
   }
 
-  &__title_color_pink {
-    color: $mainColor;
-  }
-
-  &__title_size_s {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-  }
-
   @media screen and (max-width: $brakePointforTablet) {
     .welcome {
       &__img {
@@ -48,11 +52,12 @@
         font-size: 44px;
         line-height: 28px;
         width: 283px;
-      }
-
-      &__title_size_s {
-        font-size: 24px;
-        line-height: 29px;
+        &_size {
+          &_s {
+            font-size: 24px;
+            line-height: 29px;
+          }
+        }
       }
     }
   }
@@ -60,7 +65,6 @@
   @media screen and (max-width: $brakePointforMobile) {
     .welcome {
       justify-content: center;
-
       &__img {
         position: absolute;
         visibility: hidden;
@@ -71,11 +75,12 @@
         line-height: 26px;
         width: 236px;
         margin: 148px 0;
-      }
-
-      &__title_size_s {
-        font-size: 20px;
-        line-height: 24px;
+        &_size {
+          &_s {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
       }
     }
   }

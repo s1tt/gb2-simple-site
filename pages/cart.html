@@ -8,19 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./../pages/index.css" />
-    <title>New Arrivals</title>
+    <title>Shopping Cart</title>
   </head>
   <body class="page">
     <div class="page__wrapper">
       <header class="header center">
         <div class="header__left-side">
           <a href="../index.html" class="header__left-side-logo-link"><img src="../img/logo-left-side.png" alt="" class="header__left-side-logo" /></a>
-          <button class="header__btn header__left-side-search-btn" onClick="location.href='./newArrivals.html'"></button>
+          <button class="header__btn header__left-side-search-btn" onClick="location.href='./newArrivals.html'" type="button"></button>
         </div>
         <div class="header__right-side">
           <input class="header__right-side-burger-checkbox" type="checkbox" name="burger-checkbox" id="burger-checkbox" />
           <label class="header__btn header__right-side-burger-label" for="burger-checkbox">
-            <button class="header__btn header__right-side-burger-btn"></button>
+            <button class="header__btn header__right-side-burger-btn" type="button"></button>
           </label>
           <nav class="popup popup__menu">
             <h2 class="popup__menu-title">Menu</h2>
@@ -57,95 +57,76 @@
               </li>
             </ul>
           </nav>
-          <button class="header__btn header__right-side-profile-btn"></button>
+          <button class="header__btn header__right-side-profile-btn" type="button"></button>
           <button class="header__btn header__right-side-cart-btn" onClick="location.href='./cart.html'" type="button"></button>
         </div>
       </header>
       <main class="content">
         <section class="breadcrumbs center">
-          <h2 class="breadcrumbs__title">nEw ARRIVALS</h2>
-          <nav class="breadcrumbs__nav">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a href="../index.html" class="breadcrumbs__item-link">HoME</a></li>
-              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">MeN</a></li>
-              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__item-link">nEW ARRIVALS</a></li>
-            </ul>
-          </nav>
+          <h2 class="breadcrumbs__title">Shopping Cart</h2>
         </section>
-        <section class="slider center">
-          <button class="slider__arrow-left">
-            <svg class="slider__arrow-left-ico" width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" fill="black" />
-            </svg>
-          </button>
-          <img src="../img/slider_i_img.png" alt="Image" class="slider__img" />
-          <button class="slider__arrow-right">
-            <svg class="slider__arrow-right-ico" width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z" fill="#F16D7F" />
-            </svg>
-          </button>
-        </section>
-        <section class="productDescription center">
-          <div class="productDescription__wrapper">
-            <div class="productDescription__collection-title-wrapper">
-              <h3 class="productDescription__collection-title">wOMEN COLLECTION</h3>
-            </div>
-
-            <h4 class="productDescription__item-title">mOSCHINO CHEAP AND CHIC</h4>
-            <p class="productDescription__item-description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-            <p class="productDescription__item-price">$561</p>
-            <div class="productDescription__footer">
-              <nav class="productDescription__sort">
-                <ul class="productDescription__sort-list">
-                  <li class="productDescription__sort-item"><a href="" class="productDescription__sort-item-link">cHOOSE COLOR</a></li>
-                  <li class="productDescription__sort-item"><a href="" class="productDescription__sort-item-link">cHOOSE SIZE</a></li>
-                  <li class="productDescription__sort-item"><a href="" class="productDescription__sort-item-link">qUANTITY</a></li>
+        <section class="cart center">
+          <div class="cart__items">
+            <article class="cart__item">
+              <img src="../img/cart__item1.jpg" alt="cart-item" class="cart__item-img" />
+              <div class="cart__item-description">
+                <h3 class="cart__item-title">MANGO PEOPLE T-SHIRT</h3>
+                <ul class="cart__item-characteristic-list">
+                  <li class="cart__item-characteristic">Price: <span class="cart__item-characteristic_color_main">$300</span></li>
+                  <li class="cart__item-characteristic">Color: Red</li>
+                  <li class="cart__item-characteristic">Size: Xl</li>
+                  <li class="cart__item-characteristic cart__item-characteristic-quantity">
+                    Quantity:
+                    <input class="cart__item-characteristic-quantity-input" type="number" name="cart-item-count1" id="cart-item-count1" value="2" />
+                  </li>
                 </ul>
-              </nav>
-              <button class="productDescription__btn">
-                <svg class="productDescription__btn-ico" width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.49847 22.185C5.50635 21.752 5.64091 21.3309 5.88519 20.9748C6.12947 20.6186 6.47261 20.3431 6.87158 20.1828C7.27055 20.0226 7.7076 19.9848 8.12781 20.0741C8.54802 20.1635 8.93269 20.376 9.23358 20.685C9.53447 20.994 9.73817 21.3857 9.81909 21.811C9.90002 22.2363 9.85453 22.6763 9.68842 23.0756C9.52231 23.475 9.24296 23.8161 8.88538 24.0559C8.52779 24.2957 8.10791 24.4237 7.67847 24.4237C7.38955 24.4211 7.10399 24.3611 6.83807 24.2472C6.57216 24.1333 6.3311 23.9676 6.12866 23.7597C5.92623 23.5518 5.76639 23.3057 5.65826 23.0355C5.55013 22.7653 5.49584 22.4763 5.49847 22.185ZM21.3045 24.4237C20.8711 24.4303 20.4453 24.3087 20.0797 24.074C19.7141 23.8393 19.4247 23.5017 19.2471 23.103C19.0696 22.7042 19.0117 22.2618 19.0806 21.8303C19.1496 21.3988 19.3423 20.9971 19.6351 20.6748C19.9278 20.3524 20.3077 20.1236 20.728 20.0165C21.1482 19.9095 21.5903 19.929 21.9997 20.0724C22.4091 20.2159 22.7679 20.4771 23.0317 20.8238C23.2956 21.1706 23.453 21.5877 23.4845 22.0236C23.5269 22.6155 23.3369 23.2004 22.9555 23.6523C22.7706 23.8745 22.5436 24.0574 22.2877 24.1901C22.0319 24.3227 21.7524 24.4025 21.4655 24.4247L21.3045 24.4237ZM8.59351 17.4855C8.38116 17.4851 8.17488 17.414 8.00671 17.2833C7.83855 17.1525 7.71792 16.9694 7.66351 16.7624L3.73651 2.19527H0.978516C0.719001 2.19527 0.470064 2.09128 0.28656 1.90622C0.103056 1.72116 0 1.47018 0 1.20847C0 0.946764 0.103056 0.695782 0.28656 0.510726C0.470064 0.325669 0.719001 0.22168 0.978516 0.22168H4.45752C4.66982 0.222254 4.876 0.293463 5.04413 0.424184C5.21226 0.554905 5.33295 0.737883 5.38751 0.944787L9.31451 15.5119H20.0185L23.5765 7.12665H11.7185C11.459 7.12665 11.2101 7.02266 11.0266 6.83761C10.8431 6.65255 10.74 6.40157 10.74 6.13986C10.74 5.87815 10.8431 5.62717 11.0266 5.44211C11.2101 5.25705 11.459 5.15306 11.7185 5.15306H25.0535C25.2131 5.15352 25.3701 5.19451 25.5099 5.27223C25.6497 5.34995 25.7679 5.46195 25.8535 5.59784C25.9413 5.73569 25.9945 5.89303 26.0084 6.05627C26.0224 6.21951 25.9966 6.38368 25.9335 6.53465L21.5425 16.8935C21.469 17.0684 21.3462 17.2177 21.1895 17.3229C21.0327 17.4281 20.8488 17.4846 20.6605 17.4855H8.59351Z"
-                    fill="#EF5B70"
-                  />
+              </div>
+              <button class="cart__item-close-btn" type="button">
+                <svg class="cart__item-close-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
                 </svg>
-
-                <p class="productDescription__btn-text">Add to Card</p>
               </button>
+            </article>
+            <article class="cart__item">
+              <img src="../img/cart__item2.jpg" alt="cart-item" class="cart__item-img" />
+              <div class="cart__item-description">
+                <h3 class="cart__item-title">MANGO PEOPLE T-SHIRT</h3>
+                <ul class="cart__item-characteristic-list">
+                  <li class="cart__item-characteristic">Price: <span class="cart__item-characteristic_color_main">$300</span></li>
+                  <li class="cart__item-characteristic">Color: Red</li>
+                  <li class="cart__item-characteristic">Size: Xl</li>
+                  <li class="cart__item-characteristic cart__item-characteristic-quantity">
+                    Quantity:
+                    <input class="cart__item-characteristic-quantity-input" type="number" name="cart-item-count1" id="cart-item-count1" value="2" />
+                  </li>
+                </ul>
+              </div>
+              <button class="cart__item-close-btn" type="button">
+                <svg class="cart__item-close-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
+                </svg>
+              </button>
+            </article>
+            <div class="cart__items-btns">
+              <button class="cart__items-btn cart__items-clear-btn" type="button">cLEAR SHOPPING CART</button>
+              <button class="cart__items-btn cart__items-continue-btn" type="button">cONTINUE SHOPPING</button>
             </div>
           </div>
-        </section>
-        <section class="featured-items center">
-          <h2 class="featured-items__title">Fetured Items</h2>
-          <p class="featured-items__subtitle">Shop for items based on what we featured in this week</p>
-          <div class="featured-items__cards">
-            <article class="featured-items__card">
-              <div class="featured-items__card-img-container">
-                <button class="featured-items__card-add-btn"><img src="./../img/card-ico2.svg" alt="card-ico" class="featured-items__card-add-btn-ico" /> Add to Cart</button>
-                <img src="./../img/feat1.jpg" alt="feat1" class="featured-items__card-img" />
+          <div class="cart__order">
+            <form action="#" class="cart__order-form">
+              <h3 class="cart__order-form-title">shIPPING ADRESS</h3>
+              <input type="text" placeholder="Bangladesh" />
+              <input type="text" placeholder="State" />
+              <input type="text" placeholder="Postcode / Zip" />
+              <button class="cart__order-form-btn" type="submit">GET a QUOTE</button>
+            </form>
+            <div class="cart__order-confirm">
+              <div class="cart__order-confirm-totals">
+                <p class="cart__order-confirm-subtotal">SuB TOTAL<span class="cart__order-confirm-subtotal-cost">$900</span></p>
+                <p class="cart__order-confirm-grandtotal">GRAND ToTAL<span class="cart__order-confirm-grandtotal-cost">$900</span></p>
               </div>
-              <h3 class="featured-items__card-title">ELLERY X M'O CAPSULE</h3>
-              <p class="featured-items__card-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-              <p class="featured-items__card-price">$52.00</p>
-            </article>
-            <article class="featured-items__card">
-              <div class="featured-items__card-img-container">
-                <button class="featured-items__card-add-btn"><img src="./../img/card-ico2.svg" alt="card-ico" class="featured-items__card-add-btn-ico" />Add to Cart</button>
-                <img src="./../img/feat2.jpg" alt="feat2" class="featured-items__card-img" />
-              </div>
-              <h3 class="featured-items__card-title">ELLERY X M'O CAPSULE</h3>
-              <p class="featured-items__card-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-              <p class="featured-items__card-price">$52.00</p>
-            </article>
-            <article class="featured-items__card">
-              <div class="featured-items__card-img-container">
-                <button class="featured-items__card-add-btn"><img src="./../img/card-ico2.svg" alt="card-ico" class="featured-items__card-add-btn-ico" />Add to Cart</button>
-                <img src="./../img/feat3.jpg" alt="feat3" class="featured-items__card-img" />
-              </div>
-              <h3 class="featured-items__card-title">ELLERY X M'O CAPSULE</h3>
-              <p class="featured-items__card-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-              <p class="featured-items__card-price">$52.00</p>
-            </article>
+              <button class="cart__order-confirm-btn">PROCEED To CHECKOUT</button>
+            </div>
           </div>
         </section>
         <section class="subscribe center">

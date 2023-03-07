@@ -1,7 +1,6 @@
 .slider {
   display: flex;
   justify-content: center;
-  //   align-items: center;
   background-color: #f7f7f7;
   position: relative;
 
@@ -19,6 +18,11 @@
     top: 50%;
     left: 0;
   }
+
+  &__arrow-left:hover > &__arrow-left-ico path {
+    fill: $mainColor;
+  }
+
   &__arrow-right {
     padding: 0;
     border: none;
@@ -31,9 +35,6 @@
     right: 0;
   }
 
-  &__arrow-left:hover > &__arrow-left-ico path {
-    fill: $mainColor;
-  }
   &__arrow-right:hover > &__arrow-right-ico path {
     fill: $mainColor;
   }

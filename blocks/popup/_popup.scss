@@ -5,12 +5,10 @@
   position: absolute;
 
   &__menu {
-    top: 49px;
-    right: -250px;
+    top: 78px;
+    right: -205px;
     padding: 32px;
     background-color: $lightColor;
-    visibility: hidden;
-    opacity: 0;
     transition: all 0.25s linear;
     z-index: 1;
   }

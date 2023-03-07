@@ -1092,7 +1092,7 @@
   width: 652px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
-.cart___item-img {
+.cart__item-img {
   width: 262px;
 }
 .cart__item-description {
@@ -1204,7 +1204,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #5d5d5d;
   padding-bottom: 21px;
   margin-bottom: 17px;
 }

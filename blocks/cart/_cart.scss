@@ -4,100 +4,99 @@
   gap: 129px;
   padding-top: 96px;
   padding-bottom: 128px;
+
   &__items {
     display: flex;
     gap: 40px;
     flex-direction: column;
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32.5px;
+    }
+    &-btn {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkColor;
+      padding: 16px 40px;
+      background-color: transparent;
+      border: 1px solid $grayColor;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    &-btn:hover {
+      background-color: $mainColor;
+      color: $lightColor;
+      border-color: $mainColor;
+    }
   }
-  &__items-btns {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 32.5px;
-  }
-  &__items-btn {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: $darkColor;
-    padding: 16px 40px;
-    background-color: transparent;
-    border: 1px solid $grayColor;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  &__items-btn:hover {
-    background-color: $mainColor;
-    color: $lightColor;
-    border-color: $mainColor;
-  }
+
   &__item {
     display: flex;
     width: 652px;
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
-  }
-  &___item-img {
-    width: 262px;
-  }
-  &__item-description {
-    margin: 22px 0 22px 31px;
-  }
-  &__item-title {
-    margin: 0 0 42px 0;
-    max-width: 200px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: $darkColor;
-  }
-  &__item-characteristic-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  &__item-characteristic {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color: $grayColor;
+    &-img {
+      width: 262px;
+    }
+    &-description {
+      margin: 22px 0 22px 31px;
+    }
+    &-title {
+      margin: 0 0 42px 0;
+      max-width: 200px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: $darkColor;
+    }
+    &-characteristic-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    &-characteristic {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      color: $grayColor;
+      &-quantity {
+        display: flex;
+        gap: 24px;
 
-    &-quantity {
+        &-input {
+          box-sizing: border-box;
+          border: 1px solid $grayColor;
+          width: 43px;
+          padding-left: 15px;
+          color: $grayColor;
+        }
+        &-input::-webkit-inner-spin-button,
+        &-input::-webkit-outer-spin-button {
+          display: none;
+        }
+      }
+      &_color {
+        &_main {
+          color: $mainColor;
+        }
+      }
+    }
+    &-close-btn {
+      margin: 28px 22px 0 0;
+      margin-left: auto;
+      padding: 0;
       display: flex;
-      gap: 24px;
-
-      &-input {
-        box-sizing: border-box;
-        border: 1px solid $grayColor;
-        width: 43px;
-        padding-left: 15px;
-        color: $grayColor;
-      }
-      &-input::-webkit-inner-spin-button,
-      &-input::-webkit-outer-spin-button {
-        display: none;
-      }
+      align-self: flex-start;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: transform 0.5s;
     }
-    &_color {
-      &_main {
-        color: $mainColor;
-      }
+    &-close-btn:hover {
+      transform: rotate(360deg);
     }
-  }
-
-  &__item-close-btn {
-    margin: 28px 22px 0 0;
-    margin-left: auto;
-    padding: 0;
-    display: flex;
-    align-self: flex-start;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.5s;
-  }
-
-  &__item-close-btn:hover {
-    transform: rotate(360deg);
   }
 
   &__order {
@@ -152,7 +151,7 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid $grayColor;
         padding-bottom: 21px;
         margin-bottom: 17px;
       }

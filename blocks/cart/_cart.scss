@@ -1,5 +1,5 @@
 .cart {
-  font-family: 'Lato';
+  font-family: $mainFont;
   display: flex;
   gap: 129px;
   padding-top: 96px;
@@ -123,6 +123,7 @@
         line-height: 19px;
         color: $darkColor;
       }
+
       &-btn {
         text-transform: uppercase;
         margin: 0 auto 0 0;

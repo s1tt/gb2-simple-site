@@ -1,10 +1,8 @@
 .filter {
+  font-family: $mainFont;
   display: flex;
   margin-top: 51px;
   margin-bottom: 65px;
-  font-family: $mainFont;
-  //   position: relative;
-  //   z-index: 1;
 
   &__filter {
     position: absolute;

@@ -109,6 +109,14 @@
     margin: 25px 0 16px 16px;
   }
 
+  &__card-link {
+    text-decoration: none;
+    color: $darkColor;
+  }
+  &__card-link:hover {
+    color: $mainColor;
+  }
+
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

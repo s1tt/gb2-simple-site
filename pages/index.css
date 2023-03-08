@@ -199,6 +199,13 @@
   text-transform: uppercase;
   margin: 25px 0 16px 16px;
 }
+.featured-items__card-link {
+  text-decoration: none;
+  color: #222222;
+}
+.featured-items__card-link:hover {
+  color: #f16d7f;
+}
 .featured-items__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -239,7 +246,7 @@
 }
 
 .features {
-  font-family: 1140px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 400;
   display: flex;
   justify-content: space-around;

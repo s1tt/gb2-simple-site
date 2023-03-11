@@ -46,10 +46,18 @@
     &-title {
       margin: 0 0 42px 0;
       max-width: 200px;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 29px;
       color: $darkColor;
+      &-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $darkColor;
+      }
+      &-link:hover {
+        color: $mainColor;
+      }
     }
     &-characteristic-list {
       list-style-type: none;

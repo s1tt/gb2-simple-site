@@ -1,0 +1,129 @@
+.registration {
+  font-family: $mainFont;
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0 96px 0;
+
+  &__form {
+    max-width: 360px;
+    &-fieldset {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+    &-legend {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: $darkColor;
+      margin-bottom: 20px;
+    }
+    &-input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 15px 17px;
+      border: 1px solid $grayColor;
+      margin-bottom: 21px;
+    }
+    &-input::placeholder {
+      color: $colorForInputs;
+    }
+    &-radiobox {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 33px;
+    }
+    &-sexlabel {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: $darkColor;
+      cursor: pointer;
+    }
+
+    &-sexlabel:not(:last-of-type) {
+      margin-right: 20px;
+    }
+
+    &-sexradio {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    &-password-description {
+      margin: 0 0 39px 0;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: $colorForInputs;
+    }
+    &-submit-btn {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 16px 29px;
+      background-color: $mainColor;
+      border: none;
+      cursor: pointer;
+      &-text {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        color: $lightColor;
+      }
+      &:hover {
+        background-color: $lightColor;
+        outline: 1px solid $mainColor;
+        color: $mainColor;
+        & path {
+          fill: $mainColor;
+        }
+        & p {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+  &__description {
+    max-width: 652px;
+    &-title {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: $darkColor;
+      margin-bottom: 22px;
+    }
+    &-text {
+      margin: 0;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: $darkColor;
+      margin-bottom: 21px;
+    }
+    &-list {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &-item {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $darkColor;
+      }
+      &-item::before {
+        content: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20d='M19.8035%200H18.0904C17.8502%200%2017.6222%200.111827%2017.4752%200.303176L7.3702%2013.2826L2.52481%207.05754C2.45151%206.96318%202.35808%206.88688%202.25153%206.83438C2.14499%206.78187%202.0281%206.75451%201.90963%206.75437H0.196467C0.032258%206.75437%20-0.0584248%206.94572%200.0420614%207.07494L6.75503%2015.6981C7.06874%2016.1006%207.67166%2016.1006%207.98782%2015.6981L19.9579%200.318087C20.0584%200.191349%2019.9677%200%2019.8035%200V0Z'%20fill='black'/%3E%3C/svg%3E");
+        margin-right: 23px;
+
+        // content: url('../../img/V.svg');
+        // width: 10px;
+        // height: 16px;
+      }
+    }
+  }
+}

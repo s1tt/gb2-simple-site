@@ -1337,6 +1337,7 @@
   background-color: #f16d7f;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .registration__form-submit-btn-text {
   margin: 0;

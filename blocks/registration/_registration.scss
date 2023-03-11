@@ -65,6 +65,7 @@
       background-color: $mainColor;
       border: none;
       cursor: pointer;
+      transition: all 0.3s;
       &-text {
         margin: 0;
         text-transform: uppercase;
@@ -85,6 +86,7 @@
       }
     }
   }
+
   &__description {
     max-width: 652px;
     &-title {
@@ -119,10 +121,6 @@
       &-item::before {
         content: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20d='M19.8035%200H18.0904C17.8502%200%2017.6222%200.111827%2017.4752%200.303176L7.3702%2013.2826L2.52481%207.05754C2.45151%206.96318%202.35808%206.88688%202.25153%206.83438C2.14499%206.78187%202.0281%206.75451%201.90963%206.75437H0.196467C0.032258%206.75437%20-0.0584248%206.94572%200.0420614%207.07494L6.75503%2015.6981C7.06874%2016.1006%207.67166%2016.1006%207.98782%2015.6981L19.9579%200.318087C20.0584%200.191349%2019.9677%200%2019.8035%200V0Z'%20fill='black'/%3E%3C/svg%3E");
         margin-right: 23px;
-
-        // content: url('../../img/V.svg');
-        // width: 10px;
-        // height: 16px;
       }
     }
   }

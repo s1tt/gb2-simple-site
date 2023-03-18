@@ -53,3 +53,20 @@
     fill: black;
   }
 }
+
+@media screen and (max-width: $brakePointforTablet) {
+  .slider {
+    &__img {
+      width: 466px;
+    }
+  }
+}
+
+@media screen and (max-width: $brakePointforMobile) {
+  .slider {
+    &__img {
+      width: 374px;
+      padding: 85px 0;
+    }
+  }
+}

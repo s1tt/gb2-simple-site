@@ -145,3 +145,37 @@
     padding-right: 56px;
   }
 }
+
+@media screen and (max-width: $brakePointforTablet) {
+  .productDescription {
+    border-top: 1px solid $colorForInputs;
+    border-bottom: 1px solid $colorForInputs;
+    margin-bottom: 130px;
+    &__wrapper {
+      position: static;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: $brakePointforMobile) {
+  .productDescription {
+    margin-bottom: 64px;
+    &__item {
+      &-description {
+        padding: 0 5px;
+        font-size: 14px;
+        line-height: 143.1%;
+      }
+    }
+    &__sort {
+      margin-top: 32px;
+      padding-top: 49px;
+      margin-bottom: 64px;
+      &-item {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+}

@@ -191,3 +191,46 @@
     color: $grayColor;
   }
 }
+
+@media screen and (max-width: $brakePointforTablet) {
+  .filter {
+    margin: 24px 0 40px 0;
+  }
+}
+
+@media screen and (max-width: $brakePointforMobile) {
+  .filter {
+    margin-bottom: 32px;
+    &__filter[open] {
+      width: 360px;
+    }
+    // gap: 45px;
+    &__filter {
+      z-index: 2;
+      background-color: #ffffff;
+      width: auto;
+      &-summary {
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        &-text {
+          display: none;
+        }
+        &-ico {
+          width: 37px;
+          height: 25px;
+        }
+      }
+      &-wrapper {
+        // align-self: baseline;
+        margin-top: 15px;
+        // position: static;
+        align-items: center;
+        // width: auto;
+      }
+    }
+    &__sort {
+      gap: 0;
+    }
+  }
+}

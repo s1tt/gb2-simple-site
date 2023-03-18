@@ -69,6 +69,10 @@
       font-size: 22px;
       line-height: 26px;
       color: $grayColor;
+      &-list {
+        display: flex;
+        flex-direction: column;
+      }
       &-quantity {
         display: flex;
         gap: 24px;
@@ -207,7 +211,98 @@
       &-btn:hover {
         background-color: transparent;
         color: $darkColor;
-        border: 1px solid $darkColor;
+        outline: 1px solid $darkColor;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $brakePointforTablet) {
+  .cart {
+    padding-top: 59px;
+    flex-direction: column;
+    &__item {
+      width: 100%;
+    }
+    &__order {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      gap: 15.5px;
+      &-form {
+        width: 100%;
+      }
+      &-confirm {
+        margin-top: 15px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $brakePointforMobile) {
+  .cart {
+    padding-top: 39px;
+    padding-bottom: 96px;
+    gap: 48px;
+    &__items {
+      gap: 32px;
+      &-btns {
+        margin: 0;
+        gap: 10px;
+      }
+      &-btn {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 0;
+        width: 100%;
+      }
+    }
+    &__item {
+      // align-items: start;
+      &-img {
+        width: 144px;
+      }
+      &-description {
+        margin: 13.5px 0 38px 17px;
+      }
+      &-title {
+        margin-right: 31px;
+        margin-bottom: 26px;
+        &-link {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+      &-close {
+        &-btn {
+          margin: 17px 12px 0 0;
+        }
+        &-ico {
+          width: 10px;
+        }
+      }
+      &-characteristic {
+        font-size: 14px;
+        line-height: 17px;
+        &-quantity {
+          align-items: center;
+          &-input {
+            font-size: 10px;
+            line-height: 12px;
+            padding: 0;
+            text-align: center;
+            width: 24px;
+            height: 15px;
+          }
+        }
+      }
+    }
+    &__order {
+      flex-direction: column;
+      &-confirm {
+        margin-top: 32px;
       }
     }
   }

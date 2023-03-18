@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 96px;
 
   &__btn {
     background-color: transparent;
@@ -121,7 +121,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
 
   &__subtitle {
@@ -142,25 +142,75 @@
     margin-bottom: 6px;
   }
 
-  @media screen and (max-width: $brakePointforTablet) {
-    .featured-items {
-      &__cards {
-        gap: 16px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 33px;
+  &__pages {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid $colorForInputs;
+    border-radius: 5px;
+
+    &-item:nth-of-type(7)::after {
+      content: '.....';
+      position: absolute;
+      color: $colorForInputs;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $colorForInputs;
+      &_active {
+        color: $mainColor;
+      }
+      &:hover {
+        color: $mainColor;
+      }
+    }
+
+    &-arrow-ico:hover {
+      path {
+        fill: $mainColor;
+      }
+    }
+
+    &-arrow-link {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: $brakePointforTablet) {
+  .featured-items {
+    margin-bottom: 64px;
+    &__cards {
+      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 40px;
+    }
+    &__card {
+      &_arrivals:nth-child(n + 3) {
+        display: none;
+      }
+      &_catalog:nth-child(n + 9) {
+        display: none;
       }
     }
   }
+}
 
-  @media screen and (max-width: $brakePointforMobile) {
-    .featured-items {
-      &__subtitle {
-        margin-bottom: 65px;
-      }
+@media screen and (max-width: $brakePointforMobile) {
+  .featured-items {
+    margin-bottom: 64px;
+    &__subtitle {
+      margin-bottom: 65px;
+    }
 
-      &__cards {
-        grid-template-columns: 359px;
-        margin-bottom: 41px;
+    &__cards {
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+      &_arrivals {
+        gap: 0;
       }
     }
   }

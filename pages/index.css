@@ -71,6 +71,7 @@
 .header__right-side-burger-btn {
   background-image: url("../img/burger-ico.svg");
   pointer-events: none;
+  display: block;
 }
 .header__right-side-burger-checkbox {
   position: absolute;
@@ -953,6 +954,7 @@
   align-items: center;
   justify-content: center;
   gap: 23px;
+  transition: all 0.3s;
 }
 .productDescription__btn:hover {
   color: #fbfbfb;
@@ -1575,7 +1577,7 @@
 .registration__form-submit-btn:hover path {
   fill: #f16d7f;
 }
-.registration__form-submit-btn:hover p {
+.registration__form-submit-btn:hover span {
   color: #f16d7f;
 }
 .registration__description {

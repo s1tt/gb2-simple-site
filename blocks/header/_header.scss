@@ -48,6 +48,7 @@
   &__right-side-burger-btn {
     background-image: url('../img/burger-ico.svg');
     pointer-events: none;
+    display: block;
   }
 
   &__right-side-burger-checkbox {

@@ -3,7 +3,7 @@ const initialArray = [
     id: 1,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
-    price: 52,
+    price: 52.12,
     src: './img/feat1.jpg',
     color: 'Red',
     size: 'XL'
@@ -12,7 +12,7 @@ const initialArray = [
     id: 2,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
-    price: 62,
+    price: 62.32,
     src: './img/feat2.jpg',
     color: 'Red',
     size: 'XL'
@@ -21,7 +21,7 @@ const initialArray = [
     id: 3,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
-    price: 34,
+    price: 34.1,
     src: './img/feat3.jpg',
     color: 'Red',
     size: 'XL'
@@ -39,7 +39,7 @@ const initialArray = [
     id: 5,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
-    price: 456,
+    price: 456.0,
     src: './img/feat5.jpg',
     color: 'Red',
     size: 'XL'
@@ -48,7 +48,7 @@ const initialArray = [
     id: 6,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
-    price: 456,
+    price: 456.0,
     src: './img/feat6.jpg',
     color: 'Red',
     size: 'XL'

@@ -20,7 +20,7 @@ function createCardElement(element) {
   cardElementImg.alt = title;
   cardElementTitle.textContent = title;
   cardElementDescription.textContent = description;
-  cardElementPrice.textContent = `$${Number.isInteger(price) ? price + '.00' : price}`;
+  cardElementPrice.textContent = `$${price.toFixed(2)}`;
 
   cardElementBuyBtn.addEventListener('click', event => {
     event.preventDefault();
@@ -83,7 +83,7 @@ function updateTotalCounts(element) {
   if (totalCountsString) {
     totalCounts = JSON.parse(totalCountsString);
     totalCounts.totalQuantity += 1;
-    totalCounts.totalPrice += element.price;
+    totalCounts.totalPrice = parseFloat((totalCounts.totalPrice + element.price).toFixed(2), 10);
   }
 
   // Преобразование обновленного массива "totalCounts" обратно в строку JSON

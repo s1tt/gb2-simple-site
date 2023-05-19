@@ -110,8 +110,8 @@ function createCardElement(element) {
 
 function generateTemplateCard() {
   //отрисовываем тотал прайс при открытии страницы корзины
-  cartSubTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice.toLocaleString('ru-RU')}` : 0;
-  cartGrandTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice.toLocaleString('ru-RU')}` : 0;
+  cartSubTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice}` : '$0.00';
+  cartGrandTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice}` : '$0.00';
 
   //Получаем массив объектов с товарами, лежащими в корзине
   const productsInCart = JSON.parse(sessionStorage.getItem('cart'));

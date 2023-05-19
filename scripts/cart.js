@@ -138,6 +138,9 @@ function handleCartClear(event) {
   const cards = Array.from(cartCardsSection.querySelectorAll('.cart__item'));
   cards.forEach(card => card.remove());
 
+  //убираем счетчик с иконки в хедере
+  totalItemsCount.classList.remove(totalItemsCountActiveSelector);
+
   //Обновляем данные в хранилище
   sessionStorage.setItem('totalCounts', JSON.stringify(totalCounts));
   sessionStorage.setItem('cart', JSON.stringify(cart));

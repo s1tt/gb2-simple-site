@@ -131,8 +131,8 @@ function handleCartClear(event) {
   const cart = [];
 
   //обновление значения тотал прайса после очистки корзины
-  cartSubTotalPrice.textContent = `${totalCounts.totalPrice.toFixed(2)}`;
-  cartGrandTotalPrice.textContent = `${totalCounts.totalPrice.toFixed(2)}`;
+  cartSubTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
+  cartGrandTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
 
   //удаление всех карточек со страницы
   const cards = Array.from(cartCardsSection.querySelectorAll('.cart__item'));

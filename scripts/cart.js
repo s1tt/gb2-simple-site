@@ -35,9 +35,9 @@ function createCardElement(element) {
     const targetProduct = cart.find(product => product.id === element.id);
 
     //обновление значения тотал прайса после изменения инпута
-    totalCounts.totalPrice = totalCounts.totalPrice + (newQuantity * price - targetProduct.count * price);
-    cartSubTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
-    cartGrandTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
+    totalCounts.totalPrice = parseFloat((totalCounts.totalPrice + (newQuantity * price - targetProduct.count * price)).toFixed(2), 10);
+    cartSubTotalPrice.textContent = `$${totalCounts.totalPrice}`;
+    cartGrandTotalPrice.textContent = `$${totalCounts.totalPrice}`;
 
     //обновление значения тотал товаров после изменения инпута
     totalCounts.totalQuantity = totalCounts.totalQuantity - targetProduct.count + newQuantity;
@@ -73,7 +73,7 @@ function createCardElement(element) {
     const targetProduct = cart.find(product => product.id === element.id);
 
     //обновление значения тотал прайса после удаления карточки на странице и в сторедже
-    totalCounts.totalPrice = totalCounts.totalPrice - targetProduct.price * targetProduct.count;
+    totalCounts.totalPrice = parseFloat((totalCounts.totalPrice - targetProduct.price * targetProduct.count).toFixed(2), 10);
     cartSubTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
     cartGrandTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
 

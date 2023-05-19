@@ -36,7 +36,7 @@ const initialArray = [
     size: 'XL'
   },
   {
-    id: 4,
+    id: 5,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
     price: 456,
@@ -45,7 +45,7 @@ const initialArray = [
     size: 'XL'
   },
   {
-    id: 4,
+    id: 6,
     title: "ELLERY X M'O CAPSULE",
     description: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.',
     price: 456,

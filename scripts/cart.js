@@ -18,7 +18,7 @@ function createCardElement(element) {
   const constCardElementQuantity = cardElement.querySelector('.cart__item-characteristic-quantity-input');
 
   const { src, title, price, count, color, size } = element;
-  cardElementImg.src = src;
+  cardElementImg.src = `.${src}`;
   cardElementImg.alt = title;
   cardElementTitle.textContent = title;
   cardElementPrice.textContent = `$${Number.isInteger(price) ? price + '.00' : price}`;

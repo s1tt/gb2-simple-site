@@ -6,6 +6,7 @@
   padding-bottom: 128px;
 
   &__items {
+    width: 652px;
     display: flex;
     gap: 40px;
     flex-direction: column;
@@ -15,6 +16,7 @@
       margin-top: 32.5px;
     }
     &-btn {
+      text-decoration: none;
       text-transform: uppercase;
       font-weight: 300;
       font-size: 14px;
@@ -81,8 +83,9 @@
           box-sizing: border-box;
           border: 1px solid $grayColor;
           width: 43px;
-          padding-left: 15px;
+          // padding-left: 15px;
           color: $grayColor;
+          text-align: center;
         }
         &-input::-webkit-inner-spin-button,
         &-input::-webkit-outer-spin-button {
@@ -113,6 +116,7 @@
 
   &__order {
     width: 100%;
+    max-width: 359px;
     display: flex;
     flex-direction: column;
     gap: 58px;
@@ -221,10 +225,14 @@
   .cart {
     padding-top: 59px;
     flex-direction: column;
+    &__items {
+      width: auto;
+    }
     &__item {
       width: 100%;
     }
     &__order {
+      max-width: none;
       justify-content: space-between;
       flex-direction: row;
       align-items: center;

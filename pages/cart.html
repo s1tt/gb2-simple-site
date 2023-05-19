@@ -1,171 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./../pages/index.css" />
-    <title>Shopping Cart</title>
-  </head>
-  <body class="page">
-    <div class="page__wrapper">
-      <header class="header center">
-        <div class="header__left-side">
-          <a href="../index.html" class="header__left-side-logo-link"><img src="../img/logo-left-side.png" alt="" class="header__left-side-logo" /></a>
-          <button class="header__btn header__left-side-search-btn" onClick="location.href='./newArrivals.html'" type="button"></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./../pages/index.css" />
+  <script src="../scripts/cart.js" type="module" defer></script>
+  <title>Shopping Cart</title>
+</head>
+<body class="page">
+  <div class="page__wrapper">
+    <header class="header center">
+      <div class="header__left-side">
+        <a href="../index.html" class="header__left-side-logo-link">
+          <img src="../img/logo-left-side.png" alt="" class="header__left-side-logo" /></a>
+        <a class="header__btn header__left-side-search-btn" href="./newArrivals.html"></a>
+      </div>
+      <div class="header__right-side">
+        <input class="header__right-side-burger-checkbox" type="checkbox" name="burger-checkbox" id="burger-checkbox" />
+        <label class="header__btn header__right-side-burger-label" for="burger-checkbox">
+          <a class="header__btn header__right-side-burger-btn" href="#"></a>
+        </label>
+        <nav class="popup popup__menu">
+          <h2 class="popup__menu-title">Menu</h2>
+          <ul class="popup__menu-list">
+            <li class="popup__menu-category">
+              MAN
+              <ul class="popup__menu-category-list">
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Accessories</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Bags</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Denim</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">T-Shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="popup__menu-category">
+              WOMAN
+              <ul class="popup__menu-category-list">
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Accessories</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Jackets
+                    & Coats</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Polos</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">T-Shirts</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="popup__menu-category">
+              KIDS
+              <ul class="popup__menu-category-list">
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Accessories</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Jackets
+                    & Coats</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Polos</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">T-Shirts</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Shirts</a>
+                </li>
+                <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Bags</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__btn header__right-side-profile-btn" href="./registration.html"></a>
+        <a class="header__btn header__right-side-cart-btn" href="#"><span
+            class="header__right-side-cart-count"></span></a>
+      </div>
+    </header>
+    <main class="content">
+      <section class="breadcrumbs center">
+        <h2 class="breadcrumbs__title">Shopping Cart</h2>
+      </section>
+      <section class="cart center">
+        <div class="cart__items">
+          <div class="cart__items-btns">
+            <a class="cart__items-btn cart__items-clear-btn" href="#">cLEAR SHOPPING CART</a>
+            <a class="cart__items-btn cart__items-continue-btn" href="../index.html">cONTINUE SHOPPING</a>
+          </div>
         </div>
-        <div class="header__right-side">
-          <input class="header__right-side-burger-checkbox" type="checkbox" name="burger-checkbox" id="burger-checkbox" />
-          <label class="header__btn header__right-side-burger-label" for="burger-checkbox">
-            <a class="header__btn header__right-side-burger-btn" href="#"></a>
-          </label>
-          <nav class="popup popup__menu">
-            <h2 class="popup__menu-title">Menu</h2>
-            <ul class="popup__menu-list">
-              <li class="popup__menu-category">
-                MAN
-                <ul class="popup__menu-category-list">
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Accessories</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Bags</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Denim</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">T-Shirts</a></li>
-                </ul>
-              </li>
-              <li class="popup__menu-category">
-                WOMAN
-                <ul class="popup__menu-category-list">
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Accessories</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Jackets & Coats</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Polos</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">T-Shirts</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Shirts</a></li>
-                </ul>
-              </li>
-              <li class="popup__menu-category">
-                KIDS
-                <ul class="popup__menu-category-list">
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Accessories</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Jackets & Coats</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Polos</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">T-Shirts</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Shirts</a></li>
-                  <li class="popup__menu-category-item"><a href="#" class="popup__menu-category-item-link">Bags</a></li>
-                </ul>
+        <div class="cart__order">
+          <form action="#" class="cart__order-form">
+            <h3 class="cart__order-form-title">shIPPING ADRESS</h3>
+            <input type="text" placeholder="Bangladesh" />
+            <input type="text" placeholder="State" />
+            <input type="text" placeholder="Postcode / Zip" />
+            <button class="cart__order-form-btn" type="submit">GET a QUOTE</button>
+          </form>
+          <div class="cart__order-confirm">
+            <div class="cart__order-confirm-totals">
+              <p class="cart__order-confirm-subtotal">SuB TOTAL<span
+                  class="cart__order-confirm-subtotal-cost">$900</span></p>
+              <p class="cart__order-confirm-grandtotal">GRAND ToTAL<span
+                  class="cart__order-confirm-grandtotal-cost">$900</span></p>
+            </div>
+            <button class="cart__order-confirm-btn">PROCEED To CHECKOUT</button>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe center">
+        <div class="subscribe__left">
+          <img src="./../img/Intersect.png" alt="Photo" class="subscribe__left-photo" />
+          <p class="subscribe__left-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+              class="subscribe__left-text_style_italic">a pulvinar purus condimentum“</span></p>
+        </div>
+        <div class="subscribe__right">
+          <h2 class="subscribe__right-title">subscribe</h2>
+          <p class="subscribe__right-subtitle">FOR Our NEWLETTER AND PROMOTION</p>
+          <form action="#" class="subscribe__right-form">
+            <input class="subscribe__right-form-input" type="email" name="subscribe__right-text"
+              id="subscribe__right-text" placeholder="Enter Your Email" />
+            <button class="subscribe__right-form-button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <template id="cart-card">
+        <article class="cart__item">
+          <img src="../img/cart__item2.jpg" alt="cart-item" class="cart__item-img" />
+          <div class="cart__item-description">
+            <a class="cart__item-title-link" href="#">
+              <MANGO class="cart__item-title">MANGO PEOPle T-SHIRT</h3>
+            </a>
+            <ul class="cart__item-characteristic-list">
+              <li class="cart__item-characteristic">Price: <span
+                  class="cart__item-characteristic_color_main cart__item-price">$300</span></li>
+              <li class="cart__item-characteristic">Color: <span class="cart__item-color">Red</span></li>
+              <li class="cart__item-characteristic">Size: <span class="cart__item-size">X</span></li>
+              <li class="cart__item-characteristic cart__item-characteristic-quantity">
+                Quantity:
+                <input class="cart__item-characteristic-quantity-input" type="number" name="cart-item-count1"
+                  id="cart-item-count2" value="2" />
               </li>
             </ul>
-          </nav>
-          <button class="header__btn header__right-side-profile-btn" onClick="location.href='./registration.html'" type="button"></button>
-          <button class="header__btn header__right-side-cart-btn" onClick="location.href='./cart.html'" type="button"></button>
-        </div>
-      </header>
-      <main class="content">
-        <section class="breadcrumbs center">
-          <h2 class="breadcrumbs__title">Shopping Cart</h2>
-        </section>
-        <section class="cart center">
-          <div class="cart__items">
-            <article class="cart__item">
-              <img src="../img/cart__item1.jpg" alt="cart-item" class="cart__item-img" />
-              <div class="cart__item-description">
-                <h3 class="cart__item-title"><a class="cart__item-title-link" href="#">MANGO PEOPle T-SHIRT</a></h3>
-                <ul class="cart__item-characteristic-list">
-                  <li class="cart__item-characteristic">Price: <span class="cart__item-characteristic_color_main">$300</span></li>
-                  <li class="cart__item-characteristic">Color: Red</li>
-                  <li class="cart__item-characteristic">Size: Xl</li>
-                  <li class="cart__item-characteristic cart__item-characteristic-quantity">
-                    Quantity:
-                    <input class="cart__item-characteristic-quantity-input" type="number" name="cart-item-count1" id="cart-item-count1" value="2" />
-                  </li>
-                </ul>
-              </div>
-              <button class="cart__item-close-btn" type="button">
-                <svg class="cart__item-close-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
-                </svg>
-              </button>
-            </article>
-            <article class="cart__item">
-              <img src="../img/cart__item2.jpg" alt="cart-item" class="cart__item-img" />
-              <div class="cart__item-description">
-                <h3 class="cart__item-title"><a class="cart__item-title-link" href="#">MANGO PEOPle T-SHIRT</a></h3>
-                <ul class="cart__item-characteristic-list">
-                  <li class="cart__item-characteristic">Price: <span class="cart__item-characteristic_color_main">$300</span></li>
-                  <li class="cart__item-characteristic">Color: Red</li>
-                  <li class="cart__item-characteristic">Size: Xl</li>
-                  <li class="cart__item-characteristic cart__item-characteristic-quantity">
-                    Quantity:
-                    <input class="cart__item-characteristic-quantity-input" type="number" name="cart-item-count1" id="cart-item-count2" value="2" />
-                  </li>
-                </ul>
-              </div>
-              <button class="cart__item-close-btn" type="button">
-                <svg class="cart__item-close-ico" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
-                </svg>
-              </button>
-            </article>
-            <div class="cart__items-btns">
-              <button class="cart__items-btn cart__items-clear-btn" type="button">cLEAR SHOPPING CART</button>
-              <button class="cart__items-btn cart__items-continue-btn" type="button">cONTINUE SHOPPING</button>
-            </div>
           </div>
-          <div class="cart__order">
-            <form action="#" class="cart__order-form">
-              <h3 class="cart__order-form-title">shIPPING ADRESS</h3>
-              <input type="text" placeholder="Bangladesh" />
-              <input type="text" placeholder="State" />
-              <input type="text" placeholder="Postcode / Zip" />
-              <button class="cart__order-form-btn" type="submit">GET a QUOTE</button>
-            </form>
-            <div class="cart__order-confirm">
-              <div class="cart__order-confirm-totals">
-                <p class="cart__order-confirm-subtotal">SuB TOTAL<span class="cart__order-confirm-subtotal-cost">$900</span></p>
-                <p class="cart__order-confirm-grandtotal">GRAND ToTAL<span class="cart__order-confirm-grandtotal-cost">$900</span></p>
-              </div>
-              <button class="cart__order-confirm-btn">PROCEED To CHECKOUT</button>
-            </div>
-          </div>
-        </section>
-        <section class="subscribe center">
-          <div class="subscribe__left">
-            <img src="./../img/Intersect.png" alt="Photo" class="subscribe__left-photo" />
-            <p class="subscribe__left-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="subscribe__left-text_style_italic">a pulvinar purus condimentum“</span></p>
-          </div>
-          <div class="subscribe__right">
-            <h2 class="subscribe__right-title">subscribe</h2>
-            <p class="subscribe__right-subtitle">FOR Our NEWLETTER AND PROMOTION</p>
-            <form action="#" class="subscribe__right-form">
-              <input class="subscribe__right-form-input" type="email" name="subscribe__right-text" id="subscribe__right-text" placeholder="Enter Your Email" />
-              <button class="subscribe__right-form-button" type="submit">Subscribe</button>
-            </form>
-          </div>
-        </section>
-      </main>
-      <footer class="footer center">
-        <p class="footer__all-rights">&copy; 2023 Brand All Rights Reserved.</p>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-item-link" href="#">
-              <svg class="footer__social-item-ico" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z" fill="black" />
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-item-link" href="#">
-              <svg class="footer__social-item-ico" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.4181 3.74107C14.4281 3.88319 14.4281 4.02535 14.4281 4.16747C14.4281 8.50247 11.1509 13.4974 5.16096 13.4974C3.31558 13.4974 1.60132 12.9593 0.159302 12.0253C0.421495 12.0558 0.673569 12.0659 0.94585 12.0659C2.46851 12.0659 3.8702 11.5482 4.98953 10.6649C3.5576 10.6345 2.3576 9.69032 1.94415 8.39081C2.14585 8.42125 2.34751 8.44156 2.5593 8.44156C2.85172 8.44156 3.14418 8.40094 3.41643 8.32991C1.92401 8.02531 0.80465 6.70553 0.80465 5.11163V5.07103C1.23825 5.31469 1.74249 5.46697 2.2769 5.48725C1.39959 4.89841 0.824826 3.89335 0.824826 2.75628C0.824826 2.14716 0.98614 1.58878 1.26851 1.10147C2.87187 3.09131 5.28195 4.39078 7.98443 4.53294C7.93403 4.28928 7.90376 4.0355 7.90376 3.78169C7.90376 1.97457 9.35586 0.502502 11.1609 0.502502C12.0987 0.502502 12.9457 0.89844 13.5407 1.53803C14.2768 1.39591 14.9827 1.12178 15.6079 0.746159C15.3659 1.5076 14.8516 2.14719 14.176 2.55325C14.8315 2.48222 15.4668 2.29944 16.0516 2.04566C15.608 2.69538 15.0533 3.27403 14.4181 3.74107Z"
-                  fill="black"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
+          <button class="cart__item-close-btn" type="button">
+            <svg class="cart__item-close-ico" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                fill="#575757" />
+            </svg>
+          </button>
+        </article>
+      </template>
+    </main>
+    <footer class="footer center">
+      <p class="footer__all-rights">&copy; 2023 Brand All Rights Reserved.</p>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-item-link" href="#">
+            <svg class="footer__social-item-ico" width="13" height="16" viewBox="0 0 13 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z"
+                fill="black" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-item-link" href="#">
+            <svg class="footer__social-item-ico" width="17" height="14" viewBox="0 0 17 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.4181 3.74107C14.4281 3.88319 14.4281 4.02535 14.4281 4.16747C14.4281 8.50247 11.1509 13.4974 5.16096 13.4974C3.31558 13.4974 1.60132 12.9593 0.159302 12.0253C0.421495 12.0558 0.673569 12.0659 0.94585 12.0659C2.46851 12.0659 3.8702 11.5482 4.98953 10.6649C3.5576 10.6345 2.3576 9.69032 1.94415 8.39081C2.14585 8.42125 2.34751 8.44156 2.5593 8.44156C2.85172 8.44156 3.14418 8.40094 3.41643 8.32991C1.92401 8.02531 0.80465 6.70553 0.80465 5.11163V5.07103C1.23825 5.31469 1.74249 5.46697 2.2769 5.48725C1.39959 4.89841 0.824826 3.89335 0.824826 2.75628C0.824826 2.14716 0.98614 1.58878 1.26851 1.10147C2.87187 3.09131 5.28195 4.39078 7.98443 4.53294C7.93403 4.28928 7.90376 4.0355 7.90376 3.78169C7.90376 1.97457 9.35586 0.502502 11.1609 0.502502C12.0987 0.502502 12.9457 0.89844 13.5407 1.53803C14.2768 1.39591 14.9827 1.12178 15.6079 0.746159C15.3659 1.5076 14.8516 2.14719 14.176 2.55325C14.8315 2.48222 15.4668 2.29944 16.0516 2.04566C15.608 2.69538 15.0533 3.27403 14.4181 3.74107Z"
+                fill="black" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
 </html>

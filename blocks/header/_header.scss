@@ -43,6 +43,28 @@
   &__right-side {
     display: flex;
     gap: 33px;
+    &-cart-count {
+      display: flex;
+      color: #ffffff;
+      background-color: $mainColor;
+      border-radius: 50%;
+      width: 19px;
+      height: 19px;
+      font-family: $mainFont;
+      font-size: 12px;
+      line-height: 14px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      visibility: hidden;
+      opacity: 0;
+      &_active {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
 
   &__right-side-burger-btn {
@@ -64,6 +86,7 @@
   }
 
   &__right-side-cart-btn {
+    position: relative;
     background-image: url('../img/cart-ico.svg');
   }
 

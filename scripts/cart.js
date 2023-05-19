@@ -21,7 +21,7 @@ function createCardElement(element) {
   cardElementImg.src = `.${src}`;
   cardElementImg.alt = title;
   cardElementTitle.textContent = title;
-  cardElementPrice.textContent = `$${Number.isInteger(price) ? price + '.00' : price}`;
+  cardElementPrice.textContent = `$${price.toFixed(2)}`;
   cardElementColor.textContent = color;
   cardElementSize.textContent = size;
   constCardElementQuantity.value = count;
@@ -36,8 +36,8 @@ function createCardElement(element) {
 
     //обновление значения тотал прайса после изменения инпута
     totalCounts.totalPrice = parseFloat((totalCounts.totalPrice + (newQuantity * price - targetProduct.count * price)).toFixed(2), 10);
-    cartSubTotalPrice.textContent = `$${totalCounts.totalPrice}`;
-    cartGrandTotalPrice.textContent = `$${totalCounts.totalPrice}`;
+    cartSubTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
+    cartGrandTotalPrice.textContent = `$${totalCounts.totalPrice.toFixed(2)}`;
 
     //обновление значения тотал товаров после изменения инпута
     totalCounts.totalQuantity = totalCounts.totalQuantity - targetProduct.count + newQuantity;
@@ -110,8 +110,8 @@ function createCardElement(element) {
 
 function generateTemplateCard() {
   //отрисовываем тотал прайс при открытии страницы корзины
-  cartSubTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice}` : '$0.00';
-  cartGrandTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice}` : '$0.00';
+  cartSubTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice.toFixed(2)}` : '$0.00';
+  cartGrandTotalPrice.textContent = sessionStorage.getItem('totalCounts') ? `$${JSON.parse(sessionStorage.getItem('totalCounts')).totalPrice.toFixed(2)}` : '$0.00';
 
   //Получаем массив объектов с товарами, лежащими в корзине
   const productsInCart = JSON.parse(sessionStorage.getItem('cart'));
@@ -125,14 +125,14 @@ function handleCartClear(event) {
 
   //очистка хранилища
   const totalCounts = {
-    totalQuantity: 0,
-    totalPrice: 0
+    totalQuantity: 0.0,
+    totalPrice: 0.0
   };
   const cart = [];
 
   //обновление значения тотал прайса после очистки корзины
-  cartSubTotalPrice.textContent = totalCounts.totalPrice;
-  cartGrandTotalPrice.textContent = totalCounts.totalPrice;
+  cartSubTotalPrice.textContent = `${totalCounts.totalPrice.toFixed(2)}`;
+  cartGrandTotalPrice.textContent = `${totalCounts.totalPrice.toFixed(2)}`;
 
   //удаление всех карточек со страницы
   const cards = Array.from(cartCardsSection.querySelectorAll('.cart__item'));
